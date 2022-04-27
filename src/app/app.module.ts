@@ -8,6 +8,8 @@ import { FormComponent } from './form/form.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { QuotelistComponent } from './quotelist/quotelist.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DatecountPipe } from './datecount.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormComponent,
     QuotesComponent,
     QuotelistComponent,
-    NavbarComponent
+    NavbarComponent,
+    DatecountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
