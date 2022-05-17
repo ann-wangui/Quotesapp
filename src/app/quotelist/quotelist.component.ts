@@ -8,9 +8,9 @@ import { Quotes } from '../quotes';
 })
 export class QuotelistComponent implements OnInit {
   quote: Quotes [] =[
-    new Quotes(1,'Ann','eistendemark',"It's better to be smart than strong.",new Date(2022,4,10),0,0),
-    new Quotes(2,'Mercy','willsmith',"You can't reach for anything new if your hands are full of yesterday's junk.",new Date(2022,4,10),0,0),
-    new Quotes(3,'Lucy','johndoe',"Everything happens with a reason",new Date(2022,4,10),0,0)
+    new Quotes(0,0 ,completeDate(2022,4,10),"ann","everthing happens with a reason"),
+    new Quotes( 0,0 ,completeDate(2022,5,7),"mercy","everyday is a new day"),
+     new Quotes(0,0, completeDate(2022,4,10),"shadrack","we are meant to win")
   ];
 
   get sortedQuoty(){
@@ -25,7 +25,7 @@ export class QuotelistComponent implements OnInit {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
 
-  deleteQuote(isComplete:boolean, index : number){
+  deleteQuote(isComplete:any, index : any){
     console.log('from child to parent', isComplete)
     if(isComplete){
       let todelete =confirm('Are you sure you want to delete this quote?')
@@ -68,3 +68,7 @@ export class QuotelistComponent implements OnInit {
   }
 
 }
+function completeDate(arg0: number, arg1: number, arg2: number): any {
+  throw new Error('Function not implemented.');
+}
+

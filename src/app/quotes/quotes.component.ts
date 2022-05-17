@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { map } from 'rxjs';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { Quotes } from '../quotes';
 
 @Component({

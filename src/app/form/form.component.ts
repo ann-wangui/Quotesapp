@@ -7,12 +7,12 @@ import { Quotes } from '../quotes';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  quoty = new Quotes(0,'','','',new Date(),0,0 )
+  quote = new Quotes(0,0 , completeDate(),"","")
   @Output () add = new EventEmitter<Quotes> ();
 
   addNewQuote (){
-    this.add.emit(this.quoty);
-    this.quoty= new Quotes (0,'','','',new Date(),0,0 )
+    this.add.emit(this.quote);
+    this.quote= new Quotes (0,0 , completeDate(),"","")
   }
   constructor() { }
 
@@ -20,3 +20,7 @@ export class FormComponent implements OnInit {
   }
 
 }
+function completeDate(): Date {
+  throw new Error('Function not implemented.');
+}
+

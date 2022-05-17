@@ -5,15 +5,15 @@
                 <div *ngFor="let quote of quote; let i = index" class="mt-3">
                     <ul >
                         <li >
-                            <p class="card-title" >Written by:<br>{{quote.name}}</p>
-                            <p appHighlight *ngIf="highest()=== quote.upvotes && quote.upvotes>0">The quote:<br>{{quote.quote}}</p>
+                            <!-- <p class="card-title" >Written by:<br>{{quote.name}}</p> -->
+                            <p appHighlight *ngIf="highest()=== quote.upvotes && quote.upvotes>0">The quote:<br>{{quote.quote}}</p> -->
 
-                        </li>
+                         </li>
                         <br>
                         <button class="btn-primary" (click)='toggleDetails(i)'>More Options</button>
                         <div>
-                        <app-quotedetails *ngIf="quote.showDescription"[quote]="quote" (isComplete) = 'deleteQuote($event,i)'></app-quotedetails>
-       
+                        <!-- <app-quotes [quotes]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quotes>
+        -->
                         </div>
                     </ul>
                 </div>
@@ -30,5 +30,5 @@
         
     </div>
 
-</div>
+</div> 
 

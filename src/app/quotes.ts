@@ -2,15 +2,22 @@ export class Quotes {
     showDescription: boolean;
     upvotes: number;
     downvotes: number;
-    completeDate: Date; 
+    completeDate: Date;
+    author: string;
+    quote:string;
+  showInfo: boolean;
+  
     
   
-    constructor( showDescription:boolean, upvotes:number, downvotes:number, completeDate:Date){
+    constructor(  upvotes:number, downvotes:number, completeDate:Date ,author:string ,quote:string){
+      this.showInfo=false;
+
+      // this.showDescription=false;
+      // this.upvotes =0;
+      // this.downvotes =0;
+      // this.completeDate=new Date;
+      // this.author="string"
     
-      this.showDescription=false;
-      this.upvotes =0;
-      this.downvotes =0;
-      this.completeDate=new Date;
     }
   }// export class Quotes {
   //     id: number;
