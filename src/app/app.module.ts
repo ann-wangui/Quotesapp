@@ -14,14 +14,14 @@ import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ComponentsComponent,
-    FormComponent,
-    QuotesComponent,
-    QuotelistComponent,
-    NavbarComponent,
-    DatecountPipe,
+  // declarations: [
+  //   AppComponent,
+  //   ComponentsComponent,
+  //   FormComponent,
+  //   QuotesComponent,
+  //   QuotelistComponent,
+  //   NavbarComponent,
+  //   DatecountPipe,
     HighlightDirective,
   ],
   imports: [
