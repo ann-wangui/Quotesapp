@@ -1,11 +1,11 @@
-// export class Quotes {
-//     showDescription: boolean;
-//     upvotes: number;
-//     downvotes: number;
-//     completeDate: Date;
-//     author: string;
-//     quote:string;
-//   showInfo: boolean;
+export class Quotes {
+    showDescription: boolean;
+    upvotes: number;
+    downvotes: number;
+    completeDate: Date;
+    author: string;
+    quote:string;
+  showInfo: boolean;
   
     
   
